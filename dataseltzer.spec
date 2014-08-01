@@ -2,7 +2,7 @@ Summary:	CGI component supporting dynamic Web publishing of data from SQLite/Spa
 Summary(pl.UTF-8):	Komponent CGI do dynamicznej publikacji na WWW danych z baz SQLite/SpatiaLite
 Name:		dataseltzer
 Version:	1.0.0
-Release:	1
+Release:	2
 License:	AGPL v3+
 Group:		Applications/WWW
 Source0:	http://www.gaia-gis.it/gaia-sins/dataseltzer-sources/%{name}-%{version}.tar.gz
@@ -12,11 +12,12 @@ BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
 BuildRequires:	expat-devel
 BuildRequires:	libcgi-devel
-BuildRequires:	libspatialite-devel
+BuildRequires:	libspatialite-devel >= 4.2.0
 BuildRequires:	libtool
 BuildRequires:	minizip-devel
 BuildRequires:	pkgconfig
 BuildRequires:	zlib-devel
+Requires:	libspatialite >= 4.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
